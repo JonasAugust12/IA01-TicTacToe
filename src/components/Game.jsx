@@ -35,7 +35,9 @@ export default function Game() {
     })
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-800 text-white flex items-center justify-center p-4">
+        <div className="min-h-screen bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-800 text-white flex flex-col items-center justify-center p-4">
+            <h1 className="text-3xl font-bold">IA01 - React tutorial</h1>
+            <h2 className="text-xl mb-6">22127419 - Nguyễn Minh Toàn</h2>
             <div className="w-full max-w-5xl grid gap-6 md:grid-cols-[1fr_320px]">
                 <div className="bg-white/5 backdrop-blur rounded-2xl p-6 md:p-8 shadow-xl">
                     <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
